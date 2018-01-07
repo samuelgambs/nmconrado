@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<title>Home  | Mirtes Consulting</title>
+	<!-- <link href='img/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed' sizes='192x192'> -->
+	<!-- <link href='img/favicon.ico' rel='shortcut icon' type='image/x-icon'> -->
+	<meta name="theme-color" content="#ffffff">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	{% load static %}
+
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="wrapper"><!-- start #wrap -->
+<header class="header">
+	<div class="container-fluid container-fluid--custom">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="header_bottom">
+					<div class="row row--flex row--flex-middle row--flex-wrap">
+						<div class="col-xs-12 col-md-3">
+							<div class="logo">
+								<a href="index.html">
+									<img src="{% static 'img/logo.png' %}" alt="">
+								</a>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-9 text-right">
+							<button type="button" class="btn btn--menu-mobile js-mobile-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+
+							<nav class="menu">
+								<ul class="menu_list">
+									<li class="menu_item menu_item--custom menu_item-has-children">
+										<a href="about.html">Sobre</a>
+										<ul class="sub-menu">
+											<li class="menu_item"><a href="our-approach.html">Abordagem</a></li>
+											<li class="menu_item"><a href="our-partners.html">Parceiros</a></li>
+											<li class="menu_item"><a href="quem-somos">Quem Somos</a></li>
+										</ul>
+									</li>
+									<li class="menu_item menu_item-has-children">
+										<a href="services.html">Serviços</a>
+										<ul class="sub-menu">
+											<li class="menu_item"><a href="service-single.html">Recrutamento e Seleção</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Avaliação de Perfis Profissionais</a></li>
+											<li class="menu_item"><a href="service-single.html">Pesquisa de Clima</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Segurança do Trabalho</a></li>
+											<li class="menu_item"><a href="service-single.html">Desenvolvimento de Líderes</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Treinamento e Desenvolvimento</a></li>
+											<li class="menu_item"><a href="service-single.html">Coaching</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Gestão de Pessoas por competência</a></li>
+											<li class="menu_item"><a href="service-single.html">Intervenção nos relacionamentos organizacionais</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Entrevista de Desligamento</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Mapeamento de Competências</a></li>
+											<li class="menu_item"><a href="services-tabs.html">programa de qualidade de vida no trabalho</a></li>
+											<li class="menu_item"><a href="services-tabs.html">Descrição de Cargos</a></li>
+										</ul>
+									</li>
+									<li class="menu_item menu_item-has-children">
+										<a href="cases.html">Cases</a>
+										<!--<ul class="sub-menu">-->
+											<!--<li class="menu_item"><a href="cases-single.html">Cases Single</a></li>-->
+										<!--</ul>-->
+									</li>
+									
+									<li class="menu_item"><a href="contact-us.html">Contato</a></li>
+									<!-- <li class="menu_item menu_item-has-children">
+										<a href="#">Pages</a>
+										<ul class="sub-menu">
+											<li class="menu_item"><a href="404.html">404</a></li>
+											<li class="menu_item"><a href="503.html">503</a></li>
+											<li class="menu_item"><a href="news-single-page.html">News Single</a></li>
+											<li class="menu_item"><a href="testimonials.html">Testimonials</a></li>
+											<li class="menu_item"><a href="typography.html">Typography</a></li>
+										</ul>
+									</li> -->
+								</ul>
+
+								<!-- <ul class="contacts hidden-md hidden-lg">
+									<li class="contacts_item"><i class="fi fi-placeholder"></i>1010 Avenue of the Moon, New York, NY 10018 US.</li>
+									<li class="contacts_item"><i class="fi fi-clock-circular-outline"></i>Mon - Sat 8.00 - 18.00. Sunday CLOSED</li>
+									<li class="contacts_item"><i class="fi fi-phone-receiver"></i>+1 628 123 4000</li>
+									<li class="contacts_item"><i class="fi fi-envelope"></i>jameson@example.com</li>
+								</ul> -->
+
+								<ul class="socials hidden-md hidden-lg">
+									<li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-facebook-logo"></i>Facebook</a></li>
+									<li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-twitter"></i>Twitter</a></li>
+									<li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-google-plus"></i>Google Plus</a></li>
+								</ul>
+							</nav>
+
+							<ul class="socials hidden-xs hidden-sm">
+								<li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-facebook-logo"></i>Facebook</a></li>
+								<li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-twitter"></i>Twitter</a></li>
+								<li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-google-plus"></i>Google Plus</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+{% block conteudo %}{% endblock %}
+
+
+
+<a href="#" class="back-to-top" title="Back to top"></a>
+
+</div><!-- end #wrap -->
+<!-- <footer class="footer">
+  <div class="footer_top">
+    <div class="container-fluid container-fluid--custom">
+      <div class="row">
+        <div class="col-md-12 col-lg-3 mb-3">
+          <div class="logo logo--footer">
+            <a href="#">
+              <img src="img/logo-footer.png" alt="">
+            </a>
+          </div>
+
+          <p>
+            Jameson Consulting, established in 1994, offers a wide variety of consulting services for a range of businesses. We deliver smart and innovative solutions making the most out of your business.
+          </p>
+
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h3 class="title-widget"></h3>
+          <ul class="links-list">
+            <li class="links-list_item">
+              <a href="news-single-page.html">Present your ideas to the Audit Committee the right way</a>
+              <span class="date"><i class="fi fi-calendar"></i>November 22, 2017</span>
+            </li>
+            <li class="links-list_item">
+              <a href="news-single-page.html">Biggest concerns when choosing a vendor</a>
+              <span class="date"><i class="fi fi-calendar"></i>November 22, 2017</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h3 class="title-widget">Extra links</h3>
+          <ul class="links-list links-list--menu">
+            <li class="links-list_item"><a href="about.html">About</a></li>
+            <li class="links-list_item"><a href="services.html">News</a></li>
+            <li class="links-list_item"><a href="contact-us.html">Contacts</a></li>
+            <li class="links-list_item"><a href="testimonials.html">Testimonials</a></li>
+            <li class="links-list_item"><a href="typography.html">Typography</a></li>
+            <li class="links-list_item"><a href="services.html">Services</a></li>
+            <li class="links-list_item"><a href="careers.html">Careers</a></li>
+            <li class="links-list_item"><a href="our-team.html">Our team</a></li>
+            <li class="links-list_item"><a href="our-approach.html">Our approach</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h3 class="title-widget">Subscribe</h3>
+          <p>Get latest updates and offers.</p>
+
+          <div class="subscribe">
+            <form action="#" id="form-subscribe" class="form">
+              <input type="email" class="form-control subscribe_input" name="email" placeholder="Enter Your E-mail" required >
+              <button type="submit" class="subscribe_send" title="Send"><i class="fi fi-black-envelope"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <div class="container-fluid container-fluid--custom">
+      <div class="col-sm-6">
+        <p class="copyright">Copyright © 2017 Consulting WordPress Theme by AwesomeThemes</p>
+      </div>
+
+      <div class="col-sm-6">
+        <ul class="socials socials--oval socials--right">
+          <li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-twitter"></i>Twitter</a></li>
+          <li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-facebook-logo"></i>Facebook</a></li>
+          <li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-camera"></i>Instagram</a></li>
+          <li class="socials_item"><a href="#" class="socials_link"><i class="fi fi-linkedin-logo"></i>Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer> -->
+<!-- inject:js -->
+<script src="{% static 'js/vendor/jquery.js' %}"></script>
+<script src="js/vendor/Chart.min.js"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/vendor/masonry.pkgd.min.js' %}"></script>
+<script src="{% static 'js/vendor/mixitup.min.js' %}"></script>
+<script src="{% static 'js/vendor/swiper.jquery.min.js' %}"></script>
+<!-- endinject -->
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

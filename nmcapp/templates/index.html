@@ -1,0 +1,531 @@
+{% extends "base.html" %}
+
+{% block css %}
+
+{% endblock %}
+{% load static %}
+{% block conteudo %}
+
+<section class="banner">
+  <!-- Swiper -->
+  <div class="banner-slider swiper-container">
+    <div class="swiper-wrapper">
+      <div class="banner-slide swiper-slide">
+        <div class="slide-container">
+          <div class="slide-content slide-content--left" data-caption-animate="fadeInUp">
+            <h2 class="slide-title">Treinamentos / Desenvolvimentos</h2>
+            <p class="slide-text">
+              Sendo profissionais em consultoria de negócios há mais de uma década,
+              Nós usamos nossa experiência no máximo para o seu negócio prosperar.
+            </p>
+
+            <div class="slide-btn-group">
+              <a href="about.html" class="btn btn--primary">Sobre</a>
+              <a href="contact-us.html" class="btn btn--primary">Entre em Contato</a>
+            </div>
+
+            <div class="slide-content_img slide-content_img--lg">
+              <img src="{% static 'img/banner-slider/03_man.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-next"><i class="fi fi-right-arrow"></i></div>
+    <div class="swiper-button-prev"><i class="fi fi-left-arrow"></i></div>
+  </div>
+</section>
+
+<section class="index-posts">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row row--custom">
+      <div class="col-md-4">
+        <article class="post">
+          <header class="entry-header">
+            <a href="cases-single.html">
+              <img src="{% static 'img/posts/01.jpg' %}" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Por Que Nossa Consultoria</a>
+            </h3>
+            <p> Somos uma equipe de profissionais qualificados com uma ótima experiência em marketing e estratégias de desenvolvimento de negócios.
+            </p>
+          </div>
+
+          <footer class="entry-footer">
+            <a href="cases-single.html" class="btn btn--more"><i class="fi fi-right-arrow"></i>Leia mais</a>
+          </footer>
+        </article>
+      </div>
+        <div class="col-md-4">
+        <article class="post">
+          <header class="entry-header">
+            <a href="cases-single.html">
+              <img src="{% static 'img/posts/02.jpg' %}" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Variedade de Serviços</a>
+            </h3>
+            <p>
+              Da consultoria de gestão a impostos e auditoria. Nossa equipe irá cobrir quase todas as áreas do seu negócio.
+            </p>
+          </div>
+
+          <footer class="entry-footer">
+            <a href="cases-single.html" class="btn btn--more"><i class="fi fi-right-arrow"></i>Leia mais</a>
+          </footer>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="post">
+          <header class="entry-header">
+            <a href="cases-single.html">
+              <img src="{% static 'img/posts/03.jpg' %}" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Planejar seu Futuro</a>
+            </h3>
+            <p>
+              Nós propomos uma série de soluções para seus problemas, calculando as possibilidades futuras de sua empresa.
+            </p>
+          </div>
+
+          <footer class="entry-footer">
+            <a href="cases-single.html" class="btn btn--more"><i class="fi fi-right-arrow"></i>Read more</a>
+          </footer>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-service">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <span class="section-heading_secondary">Principais</span>
+          <h2 class="section-heading_main">Treinamentos</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--flex row--flex-wrap">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service">
+          <div class="service_icon">
+            <img src="{% static 'img/icons/airplane.png' %}" alt="">
+          </div>
+          <h3 class="service_title">Desenvolvimento de Líderes</h3>
+          <p>
+            Enhancing and optimizing the work of world’s leading airports, airlines, hotels and travelling agencies for better strategic positioning and business performance.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service">
+          <div class="service_icon">
+            <img src="{% static 'img/icons/analytics.png' %}" alt="">
+          </div>
+          <h3 class="service_title">Trilha de Desenvolvimento</h3>
+          <p>
+            Continuous development and improvement of our methods guarantees the stability in growth and creation of competitive advantage of your business.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service">
+          <div class="service_icon">
+            <img src="{% static 'img/icons/basket.png' %}" alt="">
+          </div>
+          <h3 class="service_title">Negociação e Conflito</h3>
+          <p>
+            Our company’s consumer products consulting convey persisting development of the brand at altogether higher returns than undifferentiated contenders. 
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service">
+          <div class="service_icon">
+            <img src="{% static 'img/icons/invoice.png' %}" alt="">
+          </div>
+          <h3 class="service_title">Consultoria Interna em RH</h3>
+          <p>
+            We help our clients in developing and maintaining financial strategies, allowing them to win the increasingly challenging market.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service">
+          <div class="service_icon">
+            <img src="{% static 'img/icons/worldwide.png' %}" alt="">
+          </div>
+          <h3 class="service_title">Comunicação Assertiva</h3>
+          <p>
+            Professional guidance of industrial companies on new regulations and technology issues provide persistent prosperity to our clients.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service">
+          <div class="service_icon">
+            <img src="img/icons/motorbike.png" alt="">
+          </div>
+          <h3 class="service_title">Desenvolvimento de Equipes de Alta Performance</h3>
+          <p>
+            Advanced logistics practice provided by our team offer the best solutions for transport companies in their most complex challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-parallax">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="phrase">
+          <div class="phrase_text">
+          	TENHA UMA NECESSIDADE URGENTE EM UM
+			<b>CONSULTOR DE NEGÓCIOS PROFISSIONAIS?</b>
+          </div>
+          <a href="#" class="btn btn--secondary">Obter uma Cotação</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section-statistic">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="statistic">
+          <div class="statistic_icon">
+            <svg class="icon icon-file"><use xlink:href="#icon-file"></use></svg>
+          </div>
+
+          <div class="statistic_content">
+            <div class="statistic_number">952</div>
+            <div class="statistic_descr">Problemas resolvidos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="statistic">
+          <div class="statistic_icon">
+            <svg class="icon icon-operator"><use xlink:href="#icon-operator"></use></svg>
+          </div>
+
+          <div class="statistic_content">
+            <div class="statistic_number">39</div>
+            <div class="statistic_descr">Empresas atendidas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="statistic">
+          <div class="statistic_icon">
+            <svg class="icon icon-medal"><use xlink:href="#icon-medal"></use></svg>
+          </div>
+
+          <div class="statistic_content">
+            <div class="statistic_number">863</div>
+            <div class="statistic_descr">Prêmios Recebidos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="statistic">
+          <div class="statistic_icon">
+            <svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg>
+          </div>
+
+          <div class="statistic_content">
+            <div class="statistic_number">100%</div>
+            <div class="statistic_descr"> Satisfação Cliente </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- <section class="section-partners">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="swiper-container partners-carousel">
+          <ul class="swiper-wrapper partners">
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/01.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/02.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/03.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/04.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/05.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/06.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/07.png" alt=""></a></li>
+            <li class="swiper-slide"><a href="our-partners.html"><img src="img/partners/08.png" alt=""></a></li>
+          </ul>
+        </div>
+
+        <button class="btn btn--prev"><i class="fi fi-back"></i></button>
+        <button class="btn btn--next"><i class="fi fi-next"></i></button>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <span class="section-heading_secondary">Clientes</span>
+          <h2 class="section-heading_main">Testimoniais</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="swiper-container testimonials-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <div class="author">
+                  <div class="author_avatar">
+                    <img src="img/testimonials/01.png" alt="">
+                  </div>
+
+                  <div class="author_name">
+                    Jennifer Pere
+                    <span>Cafe Owner</span>
+                  </div>
+                </div>
+
+                <blockquote class="testimonial_text">
+                  <p>
+                    My family owns an old-fashioned cafe for more than a decade. After I got the business from my father, I thought that things need to be changed. Jameson Consulting distinguished themselves as top-notch professionals, making everything for my business to prosper.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <div class="author">
+                  <div class="author_avatar">
+                    <img src="img/testimonials/02.png" alt="">
+                  </div>
+
+                  <div class="author_name">
+                    Rick Upton
+                    <span>Game Development Studio Owner</span>
+                  </div>
+                </div>
+
+                <blockquote class="testimonial_text">
+                  <p>
+                    As a small game development studio in the past, we almost never faced challenges with management of the business. Now we have over 100 professionals in the state, and it’s hard to deal with on your own. I can’t imagine how things would’ve turned if not Jameson Consulting.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <div class="author">
+                  <div class="author_avatar">
+                    <img src="img/testimonials/03.png" alt="">
+                  </div>
+
+                  <div class="author_name">
+                    Greg Iverson
+                    <span>Online Store Owner</span>
+                  </div>
+                </div>
+
+                <blockquote class="testimonial_text">
+                  <p>
+                    You know it’s hard to manage the logistics if you have thousands of orders pending. Luckily, Jameson Consulting can give you a helping hand. And not only with that, they also got covered all the legislative issues.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <div class="testimonials-carousel_controls">
+            <div class="btn-prev"><i class="fi fi-left-arrow"></i></div>
+            <div class="btn-next"><i class="fi fi-right-arrow"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <span class="section-heading_secondary">Últimas</span>
+          <h2 class="section-heading_main">Notícias</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--flex row--flex-wrap row--nopadding">
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <article class="post post--news">
+          <header class="entry-header">
+            <a href="cases-single.html" class="entry-header_cover">
+              <img src="img/news/01.jpg" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Present your ideas to the Audit Committee the right way</a>
+            </h3>
+          </div>
+
+          <footer class="entry-footer">
+            <span class="date"><i class="fi fi-calendar"></i>November 22, 2017</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <article class="post post--news">
+          <header class="entry-header">
+            <a href="cases-single.html" class="entry-header_cover">
+              <img src="img/news/04.jpg" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Biggest concerns when choosing a vendor</a>
+            </h3>
+          </div>
+
+          <footer class="entry-footer">
+            <span class="date"><i class="fi fi-calendar"></i>November 22, 2017</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <article class="post post--news">
+          <header class="entry-header">
+            <a href="cases-single.html" class="entry-header_cover">
+              <img src="img/news/03.jpg" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Data Analytics: basic information</a>
+            </h3>
+          </div>
+
+          <footer class="entry-footer">
+            <span class="date"><i class="fi fi-calendar"></i>November 22, 2017</span>
+          </footer>
+        </article>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-lg-3">
+        <article class="post post--news">
+          <header class="entry-header">
+            <a href="cases-single.html" class="entry-header_cover">
+              <img src="img/news/04.jpg" alt="">
+            </a>
+          </header>
+
+          <div class="entry-content">
+            <h3 class="post_title">
+              <a href="cases-single.html">Charity affairs and their benefits</a>
+            </h3>
+          </div>
+
+          <footer class="entry-footer">
+            <span class="date"><i class="fi fi-calendar"></i>November 22, 2017</span>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-contact">
+  <div class="container-fluid container-fluid--custom">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div class="section-heading section-heading--left">
+          <span class="section-heading_secondary">Entre em Contato</span>
+          <h2 class="section-heading_main">solicite um orçamento</h2>
+        </div>
+        <p class="contact-info">Prefere resolver problemas através do telefone? Envie seus dados e nós retornaremos em breve. Caso contrário, você pode nos enviar um e-mail diretamente para obter uma resposta rápida.
+        </p>
+
+        <form action="#" id="contact-form-home" class="form">
+          <div class="row">
+            <div class="col-md-6">
+              <select class="form-control" name="b-plan">
+                <option>Business Planning</option>
+                <option>Business Planning</option>
+                <option>Business Planning</option>
+                <option>Business Planning</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="name" placeholder="Name"  required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+            </div>
+            <div class="col-md-6 text-right">
+              <button type="submit" class="btn btn--secondary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
