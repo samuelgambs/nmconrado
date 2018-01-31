@@ -5,7 +5,7 @@
 	<!--[if IE]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<![endif]-->
-	<title>Home  | Mirtes Consulting</title>
+	<title>NM Conrado Consultoria - Gestão de Pessoas e RH</title>
 	<!-- <link href='img/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed' sizes='192x192'> -->
 	<!-- <link href='img/favicon.ico' rel='shortcut icon' type='image/x-icon'> -->
 	<meta name="theme-color" content="#ffffff">
@@ -50,37 +50,24 @@
 							<nav class="menu">
 								<ul class="menu_list">
 									<li class="menu_item menu_item--custom menu_item-has-children">
-										<a href="about.html">Sobre</a>
+										<a href="about.html">Quem somos</a>
 										<ul class="sub-menu">
-											<li class="menu_item"><a href="our-approach.html">Abordagem</a></li>
-											<li class="menu_item"><a href="our-partners.html">Parceiros</a></li>
-											<li class="menu_item"><a href="quem-somos">Quem Somos</a></li>
+                      					<li class="menu_item"><a href="about.html">Sobre</a></li>
+											<li class="menu_item"><a href="team-single-page.html">Equipe</a></li>
 										</ul>
 									</li>
 									<li class="menu_item menu_item-has-children">
-										<a href="services.html">Serviços</a>
+										<a href="#">Serviços</a>
 										<ul class="sub-menu">
-											<li class="menu_item"><a href="service-single.html">Recrutamento e Seleção</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Avaliação de Perfis Profissionais</a></li>
-											<li class="menu_item"><a href="service-single.html">Pesquisa de Clima</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Segurança do Trabalho</a></li>
-											<li class="menu_item"><a href="service-single.html">Desenvolvimento de Líderes</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Treinamento e Desenvolvimento</a></li>
-											<li class="menu_item"><a href="service-single.html">Coaching</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Gestão de Pessoas por competência</a></li>
-											<li class="menu_item"><a href="service-single.html">Intervenção nos relacionamentos organizacionais</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Entrevista de Desligamento</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Mapeamento de Competências</a></li>
-											<li class="menu_item"><a href="services-tabs.html">programa de qualidade de vida no trabalho</a></li>
-											<li class="menu_item"><a href="services-tabs.html">Descrição de Cargos</a></li>
+											{% for i in services  %}
+											<li class="menu_item">
+												<a href="service-single.html">{{ i.title }}</a>
+											</li>
+											{% endfor %}
+											
 										</ul>
 									</li>
-									<li class="menu_item menu_item-has-children">
-										<a href="cases.html">Cases</a>
-										<!--<ul class="sub-menu">-->
-											<!--<li class="menu_item"><a href="cases-single.html">Cases Single</a></li>-->
-										<!--</ul>-->
-									</li>
+									
 									
 									<li class="menu_item"><a href="contact-us.html">Contato</a></li>
 									<!-- <li class="menu_item menu_item-has-children">
