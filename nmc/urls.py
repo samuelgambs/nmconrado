@@ -25,6 +25,4 @@ urlpatterns = [
     url(r'^sobre$', about, name ='sobre'),
     url(r'^', home, name='home'),
     # url(r'^', tinymce.urls)
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
