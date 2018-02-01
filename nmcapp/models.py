@@ -21,8 +21,3 @@ class Trainings(models.Model):
 	date_alteration = models.DateTimeField(auto_now=True)
 
 				
-
-def image_tag(self):
-    return u'<img src="%s" />' % <URL to the image>
-image_tag.short_description = 'Image'
-image_tag.allow_tags = True
