@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 from tinymce import models as tinymce_models
 
 
@@ -9,6 +10,7 @@ class Services(models.Model):
 	status = models.BooleanField(default=1,verbose_name='Publicado')
 	date_create = models.DateTimeField(auto_now_add=True)
 	date_alteration = models.DateTimeField(auto_now=True)
+	image = models.ImageField(upload_to='static/img')
 
 class Trainings(models.Model):
 	title = models.TextField(max_length=60, verbose_name='Título',default='título')

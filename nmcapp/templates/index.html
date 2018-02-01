@@ -30,6 +30,29 @@
         </div>
       </div>
 
+      {% for d in services %}
+
+        <div class="banner-slide swiper-slide" style="background-image: url('img/banner-slider/01.png'); ">
+        <div class="slide-container">
+          <div class="slide-content slide-content--right" data-caption-animate="fadeInUp">
+            <h2 class="slide-title">{{ d.title }}</h2>
+            <p class="slide-text">
+            {{ d.subtitle}}
+            </p>
+
+            <div class="slide-btn-group">
+              <a href="about.html" class="btn btn--primary">Saiba Mais</a>
+              <a href="contact-us.html" class="btn btn--primary">Entre em Contato</a>
+            </div>
+
+            <div class="slide-content_img">
+              <img src="{{ d.image }}">
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
     <!-- Arrows -->
     <div class="swiper-button-next"><i class="fi fi-right-arrow"></i></div>
     <div class="swiper-button-prev"><i class="fi fi-left-arrow"></i></div>
