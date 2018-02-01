@@ -10,7 +10,7 @@ class Services(models.Model):
 	status = models.BooleanField(default=1,verbose_name='Publicado')
 	date_create = models.DateTimeField(auto_now_add=True)
 	date_alteration = models.DateTimeField(auto_now=True)
-	image = models.ImageField(upload_to='static/img')
+	image = models.ImageField(upload_to='static/img', blank=True)
 
 class Trainings(models.Model):
 	title = models.TextField(max_length=60, verbose_name='Título',default='título')
@@ -22,3 +22,7 @@ class Trainings(models.Model):
 
 				
 
+def image_tag(self):
+    return u'<img src="%s" />' % <URL to the image>
+image_tag.short_description = 'Image'
+image_tag.allow_tags = True
