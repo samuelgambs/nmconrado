@@ -18,11 +18,19 @@ from nmcapp.views import home, about
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+
 # import tinymce
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^sobre$', about, name ='sobre'),
-    url(r'^', home, name='home'),
+    url(r'^index.html$', home, name='home'),
+    url(r'^$', home, name='home'),
+    #url(r'^servicos/(?P<id>\d+)$', 'services', name='services'),
+
+
+
     # url(r'^', tinymce.urls)
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
