@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tinymce'
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'nmc.urls'
@@ -119,10 +120,33 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+#STATIC_URL = '/static/'
+#STATIC_ROOT = '/home/bitnami/nmconrado/nmcapp/static/'
+#ENV_PATH = os.path.abspath(os.path.dirname(__file__))
+#MEDIA_ROOT = os.path.join(ENV_PATH, '../nmcapp/static')
+
+# static files will be stored in 'static' folder
+#STATIC_URL = '/static/'
+#STATICFILES_DIR = [
+#    BASE_DIR + '/static'
+#]
+# media files will be stored in 'media' folder
+#MEDIA_URL = '/media/'
+#MEDIA_ROOT = ENV_PATH + '/media'
+
+
+
+# static files will be stored in 'static' folder
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/bitnami/nmconrado/nmcapp/static/'
-ENV_PATH = os.path.abspath(os.path.dirname(__file__))
-MEDIA_ROOT = os.path.join(ENV_PATH, '../nmcapp/static')
+STATICFILES_DIR = [
+    BASE_DIR + '/static'
+]
+# media files will be stored in 'media' folder
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
+MEDIA_URL = '/media/'
 
 
 TINYMCE_DEFAULT_CONFIG = {'theme': 'simple', 'width': '625', 'relative_urls': False}

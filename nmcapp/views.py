@@ -11,6 +11,10 @@ def home(request):
 		"services": results_active,
 		"request": request
 	})
+
+def services(request):
+	return render(request, 'services.html')
+			
 def about(request):
 	return render(request, 'about.html')	
 
