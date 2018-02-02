@@ -14,7 +14,8 @@ class Services(models.Model):
 	image = models.ImageField(blank=True)
 	
 	def image_tag(self):
-		return format_html('<img href="{0}" src="{0}" width="150" height="150" />'.format(self.image.url))
+		if self.image:
+			return format_html('<img href="{0}" src="{0}" width="150" height="150" />'.format(self.image.url))
 
 
     
